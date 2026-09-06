@@ -1,0 +1,42 @@
+[
+  {
+    "rule_id": "DET-001",
+    "title": "Ransomware File Encryption Activity Detected",
+    "mitre_techniques": ["T1486"],
+    "vendor": "splunk",
+    "query_str": "DET-001",
+    "content_hash": "a1234567test"
+  },
+  {
+    "rule_id": "DET-002",
+    "title": "Suspicious Supply Chain Software Installation",
+    "mitre_techniques": ["T1195"],
+    "vendor": "sentinel",
+    "query_str": "DET-002",
+    "content_hash": "b2345678test"
+  },
+  {
+    "rule_id": "DET-003",
+    "title": "Unauthorized OT Protocol Command Detected",
+    "mitre_techniques": ["T0831"],
+    "vendor": "qradar",
+    "query_str": "DET-003",
+    "content_hash": "c3456789test"
+  },
+  {
+    "rule_id": "DET-004",
+    "title": "MFA Bypass and Session Hijack Attempt",
+    "mitre_techniques": ["T1111", "T1078.004"],
+    "vendor": "sentinel",
+    "query_str": "DET-004",
+    "content_hash": "d456789atest"
+  },
+  {
+    "rule_id": "DET-005",
+    "title": "Cloud IAM Privilege Escalation Detected",
+    "mitre_techniques": ["T1098"],
+    "vendor": "splunk",
+    "query_str": "DET-005",
+    "content_hash": "e56789abtest"
+  }
+]

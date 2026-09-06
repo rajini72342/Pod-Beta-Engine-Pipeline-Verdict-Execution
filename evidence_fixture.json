@@ -1,0 +1,47 @@
+[
+  {
+    "action_id": "act-001",
+    "correlation_key": "corr-001",
+    "technique_ref": "T1486",
+    "target_asset_ref": "host-fileserver-01",
+    "expected_observable": "vssadmin.exe delete shadows / cipher /e execution consistent with ransomware encryption",
+    "expected_indicators": ["vssadmin.exe", "cipher /e"],
+    "timestamp": "2026-06-01T10:00:00Z"
+  },
+  {
+    "action_id": "act-002",
+    "correlation_key": "corr-002",
+    "technique_ref": "T1195",
+    "target_asset_ref": "host-appserver-02",
+    "expected_observable": "msiexec install from an unverified source",
+    "expected_indicators": ["msiexec.exe", "/i"],
+    "timestamp": "2026-06-01T10:05:00Z"
+  },
+  {
+    "action_id": "act-003",
+    "correlation_key": "corr-003",
+    "technique_ref": "T1098",
+    "target_asset_ref": "aws-account-prod",
+    "expected_observable": "AttachUserPolicy called by a non-admin principal",
+    "expected_indicators": ["AttachUserPolicy", "non-admin"],
+    "timestamp": "2026-06-01T10:10:00Z"
+  },
+  {
+    "action_id": "act-004",
+    "correlation_key": "corr-004",
+    "technique_ref": "T1548.002",
+    "target_asset_ref": "host-workstation-03",
+    "expected_observable": "UAC bypass via fodhelper.exe",
+    "expected_indicators": ["fodhelper.exe"],
+    "timestamp": "2026-06-01T10:15:00Z"
+  },
+  {
+    "action_id": "act-005",
+    "correlation_key": "corr-005",
+    "technique_ref": "T0831",
+    "target_asset_ref": "ics-plc-04",
+    "expected_observable": "unauthorized Modbus write command to a PLC",
+    "expected_indicators": ["modbus", "function_code=5"],
+    "timestamp": "2026-06-01T10:20:00Z"
+  }
+]

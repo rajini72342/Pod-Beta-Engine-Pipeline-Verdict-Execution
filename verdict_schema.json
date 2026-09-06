@@ -1,0 +1,14 @@
+{
+  "title": "Verdict Event Schema (frozen, v2)",
+  "required": [
+    "action_id",
+    "verdict",
+    "confidence",
+    "causal_chain",
+    "regulatory_control_refs",
+    "tenant_id",
+    "timestamp",
+    "content_hash"
+  ],
+  "verdict_enum": ["Detected", "Missed", "Partial", "NoData"]
+}
